@@ -169,12 +169,11 @@ pypiwin32==223
 pyproj==3.6.1
 PyRect==0.2.0
 PyScreeze==0.1.30
-python-dateutil==2.8.2
-python-dotenv==1.0.1
+#python-dateutil==2.8.2
+#python-dotenv==1.0.1
 python-json-logger==2.0.7
 pytweening==1.0.7
 pytz==2024.1
-pywin32==306
 pywinpty==2.0.11
 PyYAML==6.0.1
 pyzmq==25.1.0
