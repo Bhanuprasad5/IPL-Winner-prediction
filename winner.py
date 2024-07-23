@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
 # Load dataset
-df = pd.read_csv(r"C:\Users\chouk\Downloads\ipl_matches.csv")
+df = pd.read_csv(r"ipl_matches.csv")
 
 # Drop irrelevant columns (e.g., Umpires)
 df = df.drop(['Umpire1', 'Umpire2'], axis=1)
