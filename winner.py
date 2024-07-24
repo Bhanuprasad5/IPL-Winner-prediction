@@ -48,7 +48,7 @@ st.set_page_config(page_title="IPL Match Winner Prediction", page_icon="🏏", l
 # Page layout
 st.markdown('<div class="container">', unsafe_allow_html=True)
 
-st.image(r"4353063-large.jpg",width=200)
+st.image(r"1720824182.png",width=200)
 st.image(r"venue-banner.jpg",width=700)
 
 # Title without extra margin
