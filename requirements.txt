@@ -175,7 +175,7 @@ PyScreeze==0.1.30
 python-json-logger==2.0.7
 pytweening==1.0.7
 pytz==2024.1
-pywinpty==2.0.11
+#pywinpty==2.0.11
 PyYAML==6.0.1
 pyzmq==25.1.0
 qtconsole==5.4.3
