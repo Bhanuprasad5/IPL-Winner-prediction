@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
 # Load dataset
-df = pd.read_csv(r"ipl_matches.csv")
+df = pd.read_csv(r"C:\Users\chouk\Downloads\ipl_matches.csv")
 
 # Drop irrelevant columns (e.g., Umpires)
 df = df.drop(['Umpire1', 'Umpire2'], axis=1)
@@ -47,6 +47,9 @@ st.set_page_config(page_title="IPL Match Winner Prediction", page_icon="🏏", l
 
 # Page layout
 st.markdown('<div class="container">', unsafe_allow_html=True)
+
+st.image(r"C:\Users\chouk\Streamlit\Cricket\4353063-large.jpg",width=200)
+st.image(r"C:\Users\chouk\Streamlit\Cricket\venue-banner.jpg",width=700)
 
 # Title without extra margin
 st.markdown('<h1 class="title">IPL Match Winner Prediction</h1>', unsafe_allow_html=True)
@@ -95,11 +98,42 @@ if st.button("Predict Winner", key="predict_button"):
 
     # Make prediction
     prediction = gbc.predict(input_data)
-    winner = label_encoder_team.inverse_transform(prediction)
+    winner = label_encoder_team.inverse_transform(prediction)[0]
 
     # Display prediction
     st.markdown('<div class="prediction-section">', unsafe_allow_html=True)
-    st.markdown(f'<h2>The predicted winner is: {winner[0]}</h2>', unsafe_allow_html=True)
+    st.markdown(f'<h2> "     {winner}     "</h2>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
+    
+    
+    if winner =='Chennai Super Kings':
+        st.image(r"C:\Users\chouk\Streamlit\Cricket\chennai-super-kings.jpg",width=700)
+    elif winner=='Delhi Capitals':
+        st.image(r"C:\Users\chouk\Streamlit\Cricket\dc.jpg",width=700)
+    elif winner=='Gujarat Titans':
+        st.image(r"C:\Users\chouk\Streamlit\Cricket\gujarat-titans.jpg",width=700)
+    elif winner=='Kings XI Punjab':
+        st.image(r"C:\Users\chouk\Streamlit\Cricket\punjab kings.jpeg",width=700)
+    elif winner=='Kolkata Knight Riders':
+        st.image(r"C:\Users\chouk\Streamlit\Cricket\kolkata-knight-riders.jpg",width=700)
+    elif winner=='Lucknow Super Giants':
+        st.image(r"C:\Users\chouk\Streamlit\Cricket\Lucknow-Super-Giants-.png",width=700)
+    elif winner=='Mumbai Indians':
+        st.image(r"C:\Users\chouk\Streamlit\Cricket\mumbai-indians-auction.jpg",width=700)
+    elif winner=='Rajasthan Royals':
+        st.image(r"C:\Users\chouk\Streamlit\Cricket\Rajasthan-Royals-2.jpg",width=700)
+    elif winner=='Royal Challengers Bangalore':
+        st.image(r"C:\Users\chouk\Streamlit\Cricket\RCB-logo-1.png",width=700)
+    else:
+        st.image(r"C:\Users\chouk\Streamlit\Cricket\Sunrisers-Hyderabad-logo.jpg",width=700)
+    
+    
+    
+    
 
 st.markdown('</div>', unsafe_allow_html=True)  # Close container
+
+
+
+
+
