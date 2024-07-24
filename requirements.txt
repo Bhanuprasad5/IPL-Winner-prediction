@@ -47,7 +47,7 @@ filelock==3.13.1
 fiona==1.9.6
 Flask==3.0.0
 flatbuffers==23.5.26
-folium==0.16.0
+#folium==0.16.0
 fonttools==4.41.1
 fqdn==1.5.1
 frozenlist==1.4.1
