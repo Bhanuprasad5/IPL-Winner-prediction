@@ -126,6 +126,8 @@ if st.button("Predict Winner", key="predict_button"):
         st.image(r"RCB-logo-1.png",width=700)
     else:
         st.image(r"Sunrisers-Hyderabad-logo.jpg",width=700)
+
+st.markdown(f'<h2> By Ireni Shiva </h2>', unsafe_allow_html=True)
     
     
     
